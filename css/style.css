@@ -57,6 +57,7 @@ body {
   font-size: 1vw;
   position: relative;
   background-color: #0a1548;
+  overflow: hidden;
 }
 span {
   font-size: 1em;
