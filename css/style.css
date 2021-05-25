@@ -124,7 +124,7 @@ a:hover {
   align-items: center;
   z-index: 1;
 }
-.header__logo {
+.logo {
   width: 10.625em;
 }
 .banner {
@@ -946,7 +946,7 @@ a:hover {
   color: #ffffff;
 }
 @media (max-width: 500px) {
-  .header__logo {
+  .logo {
     width: 22.725em;
   }
   .header {
