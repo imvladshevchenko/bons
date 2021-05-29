@@ -610,7 +610,7 @@ a:hover {
   right: 0;
   top: 111em;
   width: 22.1em;
-  z-index: 10;
+  z-index: 40;
 }
 .coin {
   position: absolute;
@@ -657,7 +657,8 @@ a:hover {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 31.4em;
+  width: 32.4em;
+  z-index: 40;
 }
 .neon8 {
   background: #ff56d0;
@@ -764,8 +765,19 @@ a:hover {
   font-size: 3em;
   color: #ffffff;
 }
+.slider__blur {
+  position: absolute;
+  top: 10%;
+  bottom: 20%;
+  left: 12%;
+  right: 12%;
+  height: auto;
+  background: rgba(18, 141, 255, 0.2);
+  mix-blend-mode: hard-light;
+  filter: blur(36px);
+}
 .slider-wrapper {
-  width: 67.625em;
+  width: 67.92em;
   margin-bottom: 2em;
 }
 .slider__list-item {
@@ -779,6 +791,7 @@ a:hover {
   align-items: center;
   padding-top: 4em;
   height: 33.5em;
+  margin-left: 0.1em;
 }
 .slider__list-item > img {
   margin-bottom: 2em;
@@ -800,14 +813,15 @@ a:hover {
 .slider__img-wrapper {
   height: 12.64em;
   margin-bottom: 2em;
-  transition: 0.5s linear;
-  animation: icon-blur 2s linear forwards;
+  /* transition: 0.5s linear;
+  animation: icon-blur 2s linear forwards; */
 }
 .slider__img-wrapper > img {
   width: 15.6em;
 }
 .uk-slider-items {
   height: 33.5em;
+  justify-content: center;
 }
 .slider__link {
   width: 14.35em;
@@ -835,6 +849,7 @@ a:hover {
 .advantages__list {
   display: flex;
   margin-bottom: 3em;
+  z-index: 30;
 }
 .advantages__list-item {
   position: relative;
@@ -911,6 +926,12 @@ a:hover {
   mix-blend-mode: hard-light;
   filter: blur(42px);
 }
+.neon10 {
+  top: -62%;
+  right: -20%;
+  bottom: -62%;
+  left: -20%;
+}
 .advantages__link {
   margin-bottom: 7.4em;
   color: rgba(255, 255, 255, 1);
@@ -925,7 +946,7 @@ a:hover {
   align-items: center;
   height: 4.2em;
   padding: 0 10.4em;
-  z-index: 10;
+  z-index: 100;
   position: relative;
 }
 .footer__text {
@@ -1009,6 +1030,7 @@ a:hover {
   }
   .uk-slider-items {
     height: 79.5em;
+    justify-content: unset;
   }
   .slider__list-item {
     width: 79.8em;
@@ -1021,6 +1043,12 @@ a:hover {
   .slider__img-wrapper {
     height: unset;
     margin-bottom: 3em;
+  }
+  .slider__blur {
+    top: 5%;
+    bottom: 20%;
+    left: 0;
+    right: 0;
   }
   .devider {
     width: 22.1em;
@@ -1052,7 +1080,7 @@ a:hover {
     display: none;
   }
   .advantages__list-item {
-    background: url(../img/desktop/neon2.png);
+    background: url(../img/desktop/neon4.png);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 77.5em;
@@ -1060,11 +1088,31 @@ a:hover {
     border-radius: 10px;
     padding-bottom: 17.3em;
   }
+  .advantages__blur1 {
+    position: absolute;
+    top: 3%;
+    bottom: 23%;
+    left: -14%;
+    right: -14%;
+    background: rgba(255, 0, 0, 0.2);
+    mix-blend-mode: hard-light;
+    filter: blur(42px);
+  }
+  .advantages__blur2 {
+    position: absolute;
+    top: 3%;
+    bottom: 23%;
+    left: -14%;
+    right: -14%;
+    background: rgba(250, 20, 173, 0.67);
+    filter: blur(320px);
+  }
+  
   .advantages__list-item:not(:last-child) {
     margin-right: 0;
   }
   .advantages-slider__list {
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     height: 77.4em;
     width: 77.2em;

@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/css/uikit.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -142,9 +143,13 @@
         tabindex="-1"
         uk-slider="autoplay: true; autoplay-interval: 5000"
       >
+      <div class="slider__blur"></div>
         <ul class="uk-slider-items">
           <li class="slider__list-item">
-            <div class="slider__img-wrapper">
+            <div class="slider__img-wrapper" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" >
               <img src="./img/desktop/slider1.png" alt="" />
             </div>
             <div class="devider"></div>
@@ -152,7 +157,10 @@
               日本人プレイヤー限定の不定期トーナメント            </p>
           </li>
           <li class="slider__list-item">
-            <div class="slider__img-wrapper">
+            <div class="slider__img-wrapper" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
               <img src="./img/desktop/slider2.png" alt="" />
             </div>
             <div class="devider"></div>
@@ -161,7 +169,10 @@
             </p>
           </li>
           <li class="slider__list-item">
-            <div class="slider__img-wrapper">
+            <div class="slider__img-wrapper" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
               <img src="./img/desktop/slider3.png" alt="" />
             </div>
             <div class="devider"></div>
@@ -170,7 +181,10 @@
             </p>
           </li>
           <li class="slider__list-item">
-            <div class="slider__img-wrapper">
+            <div class="slider__img-wrapper" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
               <img src="./img/desktop/slider4.png" alt="" />
             </div>
             <div class="devider"></div>
@@ -206,6 +220,8 @@
     </section>
     <section class="slider advantages-slider">
       <h2 class="title advantages__title">当カジノのメリット</h2>
+      <div class="advantages__blur1"></div>
+      <div class="advantages__blur2"></div>
       <div
         class="uk-light advantages-slider-wrapper"
         tabindex="-1"
@@ -301,6 +317,7 @@
       <p class="footer__text">2021©All rights reserved</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/bundle.js"></script>
   </body>
 </html>
