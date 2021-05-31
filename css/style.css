@@ -74,20 +74,12 @@ span {
     transform: rotate(-3deg);
   }
 }
-@keyframes icon-blur {
-  0% {
-    filter: blur(10px);
-  }
-  100% {
-    filter: blur(0);
-  }
-}
 @keyframes flowers-moving {
   0% {
-    transform: rotate(-6deg);
+    transform: rotate(-18deg);
   }
   50% {
-    transform: rotate(6deg);
+    transform: rotate(12deg);
   }
   100% {
     transform: rotate(-6deg);
@@ -95,13 +87,26 @@ span {
 }
 @keyframes flowers-moving-reverse {
   0% {
-    transform: rotate(6deg);
+    transform: rotate(12deg);
   }
   50% {
     transform: rotate(-6deg);
   }
   100% {
-    transform: rotate(6deg);
+    transform: rotate(9deg);
+  }
+}
+@keyframes flowers-flying {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-4em, -4em);
+  }
+  100% {
+    transform: translate(-8em, -8em);
+    opacity: 0;
   }
 }
 a:hover {
@@ -526,6 +531,7 @@ a:hover {
   z-index: 5;
   position: absolute;
 }
+
 .sakura5-1 {
   width: 1em;
   top: 0.7em;
@@ -591,13 +597,97 @@ a:hover {
   top: 6.5em;
   right: 0;
 }
-.sakura5 {
+.sakura5 > .sakura6-0 {
   position: absolute;
   left: 0;
-  top: 53em;
+  top: 58em;
   width: 25.9em;
   z-index: 10;
 }
+.sakura5 > img {
+  z-index: 15;
+  position: absolute;
+}
+
+.sakura5 > img:not(:first-child) {
+  animation: flowers-moving 2.5s linear alternate infinite;
+}
+
+.sakura6-1 {
+  width: 1.5em;
+  top: 61.7em;
+  left: 6.7em;
+}
+.sakura6-2 {
+  width: 2.5em;
+  top: 63.6em;
+  left: 7.6em;
+}
+.sakura6-3 {
+  width: 1.9em;
+  top: 63em;
+  left: 17.5em;
+}
+.sakura6-4 {
+  width: 1.5em;
+  top: 64.1em;
+  left: 16em;
+}
+.sakura6-5 {
+  width: 1.2em;
+  top: 63em;
+  left: 16.2em;
+}
+.sakura6-6 {
+  width: 1em;
+  top: 65.9em;
+  left: 6.8em;
+}
+.sakura8 > .sakura8-0 {
+  position: absolute;
+  left: 0;
+  top: 55em;
+  width: 25.9em;
+  z-index: 10;
+}
+.sakura8 > img {
+  z-index: 15;
+  position: absolute;
+}
+.sakura8 > img:not(:first-child) {
+  animation: flowers-moving-reverse 2.5s linear alternate infinite;
+}
+.sakura8-1 {
+  width: 2.5em;
+  top: 60.5em;
+  left: 2.5em;
+}
+.sakura8-2 {
+  width: 1.2em;
+  top: 57.3em;
+  left: 20.2em;
+}
+.sakura8-3 {
+  width: 1.9em;
+  top: 57.6em;
+  left: 0.9em;
+}
+.sakura8-4 {
+  width: 3em;
+  top: 56.3em;
+  left: 15em;
+}
+.sakura8-5 {
+  width: 2.2em;
+  top: 63em;
+  left: 4.2em;
+}
+.sakura8-6 {
+  width: 1.3em;
+  top: 57.4em;
+  left: 11.6em;
+}
+
 .sakura6 {
   position: absolute;
   right: 0;
@@ -605,13 +695,99 @@ a:hover {
   width: 16.9em;
   z-index: 10;
 }
-.sakura7 {
+
+.sakura9 > .sakura9-0 {
   position: absolute;
   right: 0;
   top: 111em;
   width: 22.1em;
   z-index: 40;
 }
+.sakura9 > img {
+  z-index: 15;
+  position: absolute;
+}
+.sakura9-1 {
+  width: 2.5em;
+  top: 114.5em;
+  right: 0.5em;
+}
+.sakura9-2 {
+  width: 3.2em;
+  top: 111.3em;
+  right: 0.2em;
+}
+.sakura9-3 {
+  width: 2.9em;
+  top: 116.8em;
+  right: 1.8em;
+}
+.sakura9-4 {
+  width: 3.4em;
+  top: 116.2em;
+  right: 12.6em;
+}
+.sakura9 > img:not(:first-child) {
+  animation: flowers-moving 2.5s linear alternate infinite;
+}
+.sakura10 > .sakura10-0 {
+  position: absolute;
+  right: 0;
+  top: 110em;
+  width: 13.1em;
+  z-index: 40;
+}
+.sakura10 > img {
+  z-index: 15;
+  position: absolute;
+  transition: all 5s ease-in-out;
+}
+.sakura10 > img:not(:first-child) {
+  transition: all 2s ease-in-out;
+  animation: flowers-flying 4s linear infinite;
+}
+.sakura10-1 {
+  width: 1.5em;
+  top: 110.5em;
+  right: 15.5em;
+}
+.sakura10-2 {
+  width: 3.2em;
+  top: 109.1em;
+  right: 10.2em;
+  animation-delay: 0.7s;
+}
+.sakura10-3 {
+  width: 1.8em;
+  top: 109.8em;
+  right: 19.8em;
+  animation-delay: 1.2s;
+}
+.sakura10-4 {
+  width: 1.4em;
+  top: 111.2em;
+  right: 19.6em;
+  animation-delay: 2s;
+}
+.sakura10-5 {
+  width: 1.4em;
+  top: 111.6em;
+  right: 9.8em;
+  animation-delay: 2.3s;
+}
+.sakura10-6 {
+  width: 1.4em;
+  top: 109.2em;
+  right: 18.6em;
+  animation-delay: 2.7s;
+}
+.sakura10-7 {
+  width: 1.1em;
+  top: 110.2em;
+  right: 14.6em;
+  animation-delay: 4s;
+}
+
 .coin {
   position: absolute;
   right: 3.3em;
@@ -670,7 +846,9 @@ a:hover {
   border: 5px solid #ffffff;
   border-radius: 80px;
 }
-.neon10 {
+.neon10,
+.neon11,
+.neon12 {
   background: #ff56d0;
   filter: blur(144px);
   border-radius: 80px;
@@ -716,6 +894,10 @@ a:hover {
 .banner__link {
   width: 11.4em;
   height: 3.7em;
+}
+.banner__link:hover > .neon10 {
+  transition: all 0.3s ease-in-out;
+  filter: blur(44px);
 }
 .girl-wrapper {
   position: absolute;
@@ -813,8 +995,6 @@ a:hover {
 .slider__img-wrapper {
   height: 12.64em;
   margin-bottom: 2em;
-  /* transition: 0.5s linear;
-  animation: icon-blur 2s linear forwards; */
 }
 .slider__img-wrapper > img {
   width: 15.6em;
@@ -826,6 +1006,10 @@ a:hover {
 .slider__link {
   width: 14.35em;
   height: 3.77em;
+}
+.slider__link:hover > .neon11 {
+  transition: all 0.3s ease-in-out;
+  filter: blur(44px);
 }
 .uk-slidenav-previous > svg,
 .uk-slidenav-next > svg {
@@ -862,6 +1046,15 @@ a:hover {
   padding-bottom: 4.3em;
   justify-content: flex-end;
 }
+.banner__link:hover > .neon10 {
+  filter: blur(144px);
+}
+.slider__link:hover > .neon11 {
+  filter: blur(144px);
+}
+.advantages__link:hover > .neon12 {
+  filter: blur(144px);
+}
 .advantages__list-item:not(:last-child) {
   margin-right: 2.5em;
 }
@@ -885,7 +1078,9 @@ a:hover {
 .neon7,
 .neon8,
 .neon9,
-.neon10 {
+.neon10,
+.neon11,
+.neon12 {
   position: absolute;
   top: 0;
   right: 0;
@@ -926,7 +1121,9 @@ a:hover {
   mix-blend-mode: hard-light;
   filter: blur(42px);
 }
-.neon10 {
+.neon10,
+.neon11,
+.neon12 {
   top: -62%;
   right: -20%;
   bottom: -62%;
@@ -938,6 +1135,10 @@ a:hover {
   width: 13.4em;
   height: 3.6em;
   z-index: 20;
+}
+.advantages__link:hover > .neon12 {
+  transition: all 0.3s ease-in-out;
+  filter: blur(44px);
 }
 .footer {
   background: #060f3a;
@@ -980,6 +1181,7 @@ a:hover {
   .sakura4,
   .sakura5,
   .sakura6,
+  .sakura9,
   .coin,
   .coin1,
   .coin3 {
@@ -1107,7 +1309,7 @@ a:hover {
     background: rgba(250, 20, 173, 0.67);
     filter: blur(320px);
   }
-  
+
   .advantages__list-item:not(:last-child) {
     margin-right: 0;
   }
@@ -1160,6 +1362,59 @@ a:hover {
     top: 212em;
     width: 118.4em;
   }
+  .sakura10 > .sakura10-0 {
+    position: absolute;
+    right: 0;
+    top: 242em;
+    width: 46.1em;
+    z-index: 0;
+  }
+  .sakura10 > img {
+    z-index: 0;
+    position: absolute;
+    transition: all 5s ease-in-out;
+  }
+  .sakura10-1 {
+    width: 4.5em;
+    top: 237.5em;
+    right: 54.5em;
+  }
+  .sakura10-2 {
+    width: 6.2em;
+    top: 239.1em;
+    right: 40.2em;
+    animation-delay: 0.7s;
+  }
+  .sakura10-3 {
+    width: 3.8em;
+    top: 238.8em;
+    right: 67.8em;
+    animation-delay: 1.2s;
+  }
+  .sakura10-4 {
+    width: 5.4em;
+    top: 265.2em;
+    right: 12.6em;
+    animation-delay: 2s;
+  }
+  .sakura10-5 {
+    width: 4.4em;
+    top: 244.6em;
+    right: 47.8em;
+    animation-delay: 2.3s;
+  }
+  .sakura10-6 {
+    width: 5.4em;
+    top: 247.2em;
+    right: 14.6em;
+    animation-delay: 2.7s;
+}
+.sakura10-7 {
+  width: 4.1em;
+  top: 240.2em;
+  right: 42.6em;
+  animation-delay: 4s;
+}
 }
 @media (min-width: 500px) {
   .advantages-slider {
