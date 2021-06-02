@@ -1313,6 +1313,8 @@ a:hover {
   .sakura5,
   .sakura6,
   .sakura9,
+  .sakura11,
+  .sakura12,
   .coin,
   .coin1,
   .coin3 {
@@ -1425,8 +1427,8 @@ a:hover {
     position: absolute;
     top: 3%;
     bottom: 23%;
-    left: -14%;
-    right: -14%;
+    left: 0;
+    right: 0;
     background: rgba(255, 0, 0, 0.2);
     mix-blend-mode: hard-light;
     filter: blur(42px);
@@ -1435,8 +1437,8 @@ a:hover {
     position: absolute;
     top: 3%;
     bottom: 23%;
-    left: -14%;
-    right: -14%;
+    left: 0;
+    right: 0;
     background: rgba(250, 20, 173, 0.67);
     filter: blur(320px);
   }
